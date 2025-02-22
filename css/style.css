@@ -1,0 +1,197 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 75px 0px;
+}
+
+.heading {
+  font-size: 42px;
+}
+
+.sub-heading {
+  font-size: 26px;
+}
+
+#header {
+  width: 100%;
+  background: url("https://c.ndtvimg.com/2024-12/ajt8q5h_2025-kawasaki-ninja-1100sx_625x300_19_December_24.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: left;
+  object-fit: contain;
+  color: #54ac00;
+}
+
+.overlay {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+#header input, #header .btn{
+  font-size: 18px;
+}
+
+ /* #models {
+  background: #eeeef1;
+}  */
+
+#models ul li::marker {
+  color: #54ac00;
+}
+
+.header-content {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  padding: 0px 25px;
+}
+
+#footer {
+  padding: 40px 0px;
+  background: #000;
+}
+
+#footer ul{
+  padding: 0px;
+}
+
+#footer img {
+  margin-bottom: 1.5rem;
+}
+
+#footer li {
+  padding: 10px 10px;
+}
+
+#footer li a i {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+#footer li a:hover i {
+  color: #54ac00;
+}
+
+#footer .footer-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease-out;
+}
+
+#footer .footer-links li a:hover {
+  color: #54ac00;
+}
+
+#footer p {
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+
+@media screen and (max-width: 765px){
+  /* section{
+    padding: 25px 0px;
+  } */
+
+
+  section{
+    padding: 0px 0px;
+  }
+
+  section:nth-child(1){
+    padding: 2.5rem 0px 0px;
+  }
+
+  section:last-child{
+    padding: 0px 0px 2.5rem;
+  }
+
+
+  .col-12{
+    margin-bottom: 2.5rem;
+  }
+
+  .mobile-none{
+    display: none;
+  }
+
+  .mobile-order-1{
+    order: 1;
+  }
+
+  .mobile-order-2{
+    order: 2;
+  }
+
+  #header .header-content{
+    height: 100% !important;
+  }
+
+  .footer-links {
+    flex-direction: column !important;
+   }
+
+   .footer-links li a{
+    font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 996px) {
+  section{
+    padding: 0px 0px;
+  }
+
+ #overview{
+    padding: 2.5rem 0px 0px !important;
+  }
+
+  #video{
+    padding: 0px 0px 2.5rem;
+  }
+
+  .mobile-none{
+    display: none;
+  }
+
+  .mobile-order-1{
+    order: 1;
+  }
+
+  .mobile-order-2{
+    order: 2;
+  }
+
+  .col-12{
+    margin-bottom: 2.5rem;
+  }
+
+  #hero {
+    height: 100%;
+    padding: 75px 0px;
+  }
+
+  .footer-links {
+   flex-direction: column !important;
+  }
+
+  .footer-links li a{
+    font-size: 14px;
+   }
+}
